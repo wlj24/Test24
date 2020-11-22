@@ -1,5 +1,7 @@
 package thread;
 
+import thread.countdownlatch.CountdownlatchTest;
+
 import java.util.concurrent.TimeUnit;
 
 public class WaitNotify {
@@ -12,6 +14,7 @@ public class WaitNotify {
      TimeUnit.SECONDS.sleep(1);
      Thread thread1=new Thread(new Notify(),"notify");
      thread1.start();
+
 
     }
 

@@ -29,17 +29,17 @@ public class ABCThread {
 
                 lock.lock();
                 try {
-                    if(a>30){
+                    if(a>=30){
                         break;
                     }
-                //    System.out.println(a);
-                   if(a%3==i){
+               //     System.out.println(i);
+                   if(a%3==i&&i==0){
                        System.out.println(Thread.currentThread().getName()+"A");
                        flag=true;
-                   }else if(a%3==i){
+                   }else if(a%3==i&&i==1){
                        System.out.println(Thread.currentThread().getName()+"B");
                        flag=true;
-                   }else if(a%3==i){
+                   }else if(a%3==i&&i==2){
                        System.out.println(Thread.currentThread().getName()+"C");
                        flag=true;
                    }

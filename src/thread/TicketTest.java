@@ -1,6 +1,6 @@
 package thread;
 
-import JWM.GcTest;
+
 
 public class TicketTest {
     public static  int[] arr = new int[100];

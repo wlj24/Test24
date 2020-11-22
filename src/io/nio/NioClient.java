@@ -12,8 +12,8 @@ public class NioClient {
 
 
     public static void main(String[] args) throws Exception{
-//        NioClient nioClient=new NioClient();
-//        nioClient.start();
+        NioClient nioClient=new NioClient();
+        nioClient.start("1");
 
 
     }
