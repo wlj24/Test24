@@ -8,17 +8,30 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentranLockTest {
     public static void main(String[] args) {
-        PrintDemo PD = new PrintDemo();
-        ThreadDemo t1 = new ThreadDemo( "Thread - 1 ", PD );
-        ThreadDemo t2 = new ThreadDemo( "Thread - 2 ", PD );
-        ThreadDemo t3 = new ThreadDemo( "Thread - 3 ", PD );
-        ThreadDemo t4 = new ThreadDemo( "Thread - 4 ", PD );
-        t1.start();
-        t2.start();
-        t3.start();
-        t4.start();
+//        PrintDemo PD = new PrintDemo();
+//        ThreadDemo t1 = new ThreadDemo( "Thread - 1 ", PD );
+//        ThreadDemo t2 = new ThreadDemo( "Thread - 2 ", PD );
+//        ThreadDemo t3 = new ThreadDemo( "Thread - 3 ", PD );
+//        ThreadDemo t4 = new ThreadDemo( "Thread - 4 ", PD );
+//        t1.start();
+//        t2.start();
+//        t3.start();
+//        t4.start();
+        if (test2()&&test2()){
+            System.out.println(1);
+        }
+    }
+    public static boolean test1(){
+        System.out.println("2");
+        return true;
+    }
+    public static boolean test2(){
+        System.out.println("1");
+        return false;
     }
 }
+
+
 
 class PrintDemo{
     private final Lock queueLock=new ReentrantLock();

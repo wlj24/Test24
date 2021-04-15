@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Hs {
 public static void main(String args[]){
-	HashMap hs=new HashMap();
+	HashMap hs=new HashMap(0);
 	hs.put(null, "a");
 	hs.put(null, "b");
 	hs.put("a", "b");
